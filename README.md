@@ -1,7 +1,7 @@
 # Ionic Vercel App
 
 ##  Descrição do Projeto
-Este projeto é uma aplicação mobile/web desenvolvida com Ionic e Angular.
+Este projeto é uma aplicação mobile desenvolvida com Ionic e Angular.
 O objetivo da aplicação é consumir uma API de livros, exibir um livro aleatório,
 permitir a visualização de seus detalhes e possibilitar que o usuário salve
 livros favoritos para consulta posterior.
