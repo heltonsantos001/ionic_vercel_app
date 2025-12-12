@@ -6,7 +6,7 @@ O objetivo da aplicação é consumir uma API de livros, exibir um livro aleató
 permitir a visualização de seus detalhes e possibilitar que o usuário salve
 livros favoritos para consulta posterior.
 
-A aplicação possui três telas principais:
+A aplicação possui três telas principais: 
 - **Home**: exibe um livro aleatório
 - **Detalhes**: mostra informações completas do livro
 - **Favoritos**: lista os livros salvos pelo usuário

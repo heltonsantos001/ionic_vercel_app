@@ -29,8 +29,8 @@ export class DetailsPage {
   async addFavorite() {
     this.fav.addFavorite(this.book);
     const alert = await this.alertCtrl.create({
-      header: 'Sucesso',
-      message: 'Livro adicionado aos favoritos!',
+      header: 'Realizado',
+      message: 'Livro favoritado',
       buttons: ['OK'],
     });
     await alert.present();

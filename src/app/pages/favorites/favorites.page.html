@@ -1,10 +1,9 @@
 <ion-header translucent="true">
   <ion-toolbar class="lux-home-header">
     <ion-title>favoritos</ion-title>
-
-    <ion-buttons slot="end">
-      <ion-button routerLink="/favorites" class="favorite-btn">
-        <ion-icon name="star"></ion-icon>
+     <ion-buttons slot="end">
+      <ion-button routerLink="/home" class="favorite-btn">
+        Home
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -32,15 +31,14 @@
           slot="end"
           (click)="remove(i)"
         >
-          <ion-icon name="trash"></ion-icon>
+          Remover
         </ion-button>
 
       </ion-item>
     </ion-list>
 
     <div class="empty" *ngIf="favorites.length === 0">
-      <ion-icon name="star-outline"></ion-icon>
-      <p>Nenhum favorito salvo</p>
+      <p>Lista de favoritos esta vazia</p>
     </div>
 
   </div>
