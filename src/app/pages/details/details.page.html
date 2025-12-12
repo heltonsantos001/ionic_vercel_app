@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalhes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="book">
+  <div class="details-container">
+
+    <ion-card class="cover-card">
+      <img [src]="book.cover" />
+    </ion-card>
+
+    <h2 class="title">{{ book.originalTitle }}</h2>
+
+    <div class="info">
+      <p><strong>Data:</strong> {{ book.releaseDate }}</p>
+      <p><strong>Páginas:</strong> {{ book.pages }}</p>
+    </div>
+
+    <p class="description">
+      {{ book.description }}
+    </p>
+
+    <ion-button expand="block" color="success" (click)="addFavorite()">
+      <ion-icon name="star" slot="start"></ion-icon>
+      Favoritar
+    </ion-button>
+
+    <ion-button expand="block" fill="outline" (click)="goHome()">
+      Voltar
+    </ion-button>
+
+  </div>
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/favorites">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- LOADING -->
+  <div class="center-container" *ngIf="loading">
+    <ion-spinner name="crescent"></ion-spinner>
+  </div>
+
+  <!-- CONTEÚDO -->
+  <div class="center-container" *ngIf="!loading && book">
+    <ion-card class="book-card" (click)="goToDetails()">
+      <img [src]="book.cover" />
+    </ion-card>
+
+    <h2 class="book-title">
+      Livro {{ book.number }} - {{ book.originalTitle }}
+    </h2>
+  </div>
+
+</ion-content>

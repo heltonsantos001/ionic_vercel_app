@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Favoritos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="favorites-container">
+
+    <ion-list *ngIf="favorites.length > 0">
+      <ion-item *ngFor="let book of favorites; let i = index" lines="none">
+
+        <ion-thumbnail slot="start">
+          <img [src]="book.cover" />
+        </ion-thumbnail>
+
+        <ion-label (click)="openDetails(book)" class="clickable">
+          <h2>{{ book.originalTitle }}</h2>
+          <p>Livro {{ book.number }}</p>
+        </ion-label>
+
+        <ion-button
+          fill="clear"
+          color="danger"
+          slot="end"
+          (click)="remove(i)"
+        >
+          <ion-icon name="trash"></ion-icon>
+        </ion-button>
+
+      </ion-item>
+    </ion-list>
+
+    <div class="empty" *ngIf="favorites.length === 0">
+      <ion-icon name="star-outline"></ion-icon>
+      <p>Nenhum favorito salvo</p>
+    </div>
+
+  </div>
+</ion-content>
