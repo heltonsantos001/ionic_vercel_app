@@ -34,7 +34,7 @@ Certifique-se de ter instalado em sua máquina:
 Para instalar o Ionic CLI:
 ```bash
 npm install -g @ionic/cli
-
+```
 ## Telas da Aplicação
 
 ### Home
