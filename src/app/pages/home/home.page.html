@@ -1,13 +1,15 @@
-<ion-header>
-  <ion-toolbar>
+<ion-header translucent="true">
+  <ion-toolbar class="lux-home-header">
     <ion-title>Home</ion-title>
+
     <ion-buttons slot="end">
-      <ion-button routerLink="/favorites">
+      <ion-button routerLink="/favorites" class="favorite-btn">
         <ion-icon name="star"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
 
 <ion-content>
 
@@ -17,14 +19,23 @@
   </div>
 
   <!-- CONTEÚDO -->
-  <div class="center-container" *ngIf="!loading && book">
-    <ion-card class="book-card" (click)="goToDetails()">
-      <img [src]="book.cover" />
-    </ion-card>
+  <div class="home-container" *ngIf="!loading && book">
 
-    <h2 class="book-title">
-      Livro {{ book.number }} - {{ book.originalTitle }}
-    </h2>
+    <div class="section-label">
+      Destaque da Semana
+    </div>
+
+    <div class="featured-card" (click)="goToDetails()">
+      <div class="cover-wrapper">
+        <img [src]="book.cover" />
+      </div>
+
+      <div class="book-info">
+        <h2>Livro {{ book.number }}</h2>
+        <p>{{ book.originalTitle }}</p>
+      </div>
+    </div>
+
   </div>
 
 </ion-content>

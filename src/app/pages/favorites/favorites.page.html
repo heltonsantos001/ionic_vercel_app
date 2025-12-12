@@ -1,8 +1,15 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Favoritos</ion-title>
+<ion-header translucent="true">
+  <ion-toolbar class="lux-home-header">
+    <ion-title>favoritos</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button routerLink="/favorites" class="favorite-btn">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
 
 <ion-content>
   <div class="favorites-container">

@@ -1,41 +1,147 @@
-.details-container {
-  max-width: 420px;
-  margin: 0 auto;
-  padding: 16px;
-  text-align: center;
+
+
+ion-header {
+  --background: transparent;
 }
 
-.cover-card {
-  width: 220px;
-  margin: 0 auto 16px;
-  border-radius: 14px;
+.lux-home-header {
+  --background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --color: #f5f5f5;
 
-  img {
-    border-radius: 14px;
+  padding-top: env(safe-area-inset-top);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35);
+
+  ion-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    letter-spacing: 1.2px;
+    font-weight: 600;
   }
 }
 
-.title {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 12px;
+
+
+.favorite-btn {
+  --background: transparent;
+  --color: #d4af37;
+
+  ion-icon {
+    font-size: 1.4rem;
+    filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.5));
+  }
 }
 
-.info {
+
+ion-content {
+  --background: #0e0e11;
+}
+
+
+ion-content {
+  --background: #f7f6f3;
+}
+
+.details-container {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 24px 20px 36px;
+}
+
+/* CAPA */
+.cover-wrapper {
+  border-radius: 20px;
+  background: linear-gradient(145deg, #d4af37, #b8962e);
+  padding: 4px;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+  }
+}
+
+/* TÍTULO */
+.title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2c2a26;
+  margin-bottom: 18px;
+}
+
+/* INFORMAÇÕES HORIZONTAIS */
+.meta {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 12px;
-  font-size: 14px;
-  color: #555;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 14px 10px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  margin-bottom: 18px;
 }
 
+.meta-item {
+  text-align: center;
+
+  span {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #b8962e;
+    margin-bottom: 4px;
+  }
+
+  strong {
+    font-size: 1rem;
+    color: #2c2a26;
+  }
+}
+
+.meta-divider {
+  width: 1px;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* DESCRIÇÃO */
 .description {
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  color: #444;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #3f3d38;
+  text-align: justify;
+  margin-bottom: 28px;
 }
 
-ion-button {
-  margin-top: 10px;
+/* AÇÕES */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* BOTÃO PRINCIPAL */
+.primary-action {
+  --background: linear-gradient(135deg, #d4af37, #b8962e);
+  --color: #1f1d18;
+  --border-radius: 18px;
+  --box-shadow: 0 12px 30px rgba(212, 175, 55, 0.45);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  height: 52px;
+}
+
+/* BOTÃO SECUNDÁRIO */
+.secondary-action {
+  --background: transparent;
+  --color: #b8962e;
+  --border-radius: 18px;
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: #d4af37;
+  height: 52px;
 }

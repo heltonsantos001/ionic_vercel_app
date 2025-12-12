@@ -1,35 +1,67 @@
-<ion-header>
-  <ion-toolbar>
+<ion-header translucent="true">
+  <ion-toolbar class="lux-home-header">
     <ion-title>Detalhes</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button routerLink="/favorites" class="favorite-btn">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
+
 
 <ion-content *ngIf="book">
   <div class="details-container">
 
-    <ion-card class="cover-card">
+    <div>
+
+   
+    <div class="cover-wrapper">
       <img [src]="book.cover" />
-    </ion-card>
+    </div>
 
     <h2 class="title">{{ book.originalTitle }}</h2>
 
-    <div class="info">
-      <p><strong>Data:</strong> {{ book.releaseDate }}</p>
-      <p><strong>Páginas:</strong> {{ book.pages }}</p>
+     <div class="meta">
+
+      <div class="meta-item">
+        <span>Publicado</span>
+        <strong>{{ book.releaseDate }}</strong>
+      </div>
+
+      <div class="meta-divider"></div>
+
+      <div class="meta-item">
+        <span>Páginas</span>
+        <strong>{{ book.pages }}</strong>
+      </div>
+
     </div>
+
+     </div>
+   
+     <div>
 
     <p class="description">
       {{ book.description }}
     </p>
 
-    <ion-button expand="block" color="success" (click)="addFavorite()">
-      <ion-icon name="star" slot="start"></ion-icon>
-      Favoritar
-    </ion-button>
+    <!-- AÇÕES -->
+    <div class="actions">
 
-    <ion-button expand="block" fill="outline" (click)="goHome()">
-      Voltar
-    </ion-button>
+      <ion-button class="primary-action" (click)="addFavorite()">
+        <ion-icon name="star" slot="start"></ion-icon>
+        Adicionar à coleção
+      </ion-button>
+
+      <ion-button class="secondary-action" (click)="goHome()">
+        Voltar à Home
+      </ion-button>
+
+    </div>
+    </div>
 
   </div>
 </ion-content>
