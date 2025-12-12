@@ -49,7 +49,7 @@ ion-content {
   padding: 24px 20px 36px;
 }
 
-/* CAPA */
+
 .cover-wrapper {
   border-radius: 20px;
   background: linear-gradient(145deg, #d4af37, #b8962e);
@@ -63,7 +63,7 @@ ion-content {
   }
 }
 
-/* TÍTULO */
+
 .title {
   text-align: center;
   font-size: 1.6rem;
@@ -72,7 +72,7 @@ ion-content {
   margin-bottom: 18px;
 }
 
-/* INFORMAÇÕES HORIZONTAIS */
+
 .meta {
   display: flex;
   justify-content: space-around;
@@ -108,7 +108,6 @@ ion-content {
   background: rgba(0, 0, 0, 0.1);
 }
 
-/* DESCRIÇÃO */
 .description {
   font-size: 1rem;
   line-height: 1.65;
@@ -117,14 +116,14 @@ ion-content {
   margin-bottom: 28px;
 }
 
-/* AÇÕES */
+
 .actions {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
-/* BOTÃO PRINCIPAL */
+
 .primary-action {
   --background: linear-gradient(135deg, #d4af37, #b8962e);
   --color: #1f1d18;
@@ -135,7 +134,7 @@ ion-content {
   height: 52px;
 }
 
-/* BOTÃO SECUNDÁRIO */
+
 .secondary-action {
   --background: transparent;
   --color: #b8962e;

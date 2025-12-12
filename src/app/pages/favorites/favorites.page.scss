@@ -38,19 +38,18 @@ ion-content {
   --background: #f7f6f3;
 }
 
-/* CONTAINER CENTRAL */
+
 .favorites-container {
   max-width: 420px;
   margin: 0 auto;
   padding: 16px 14px 32px;
 }
 
-/* LISTA */
 ion-list {
   background: transparent;
 }
 
-/* ITEM DO FAVORITO */
+
 ion-item {
   --background: #ffffff;
   --border-radius: 16px;
@@ -60,7 +59,6 @@ ion-item {
   padding: 10px;
 }
 
-/* THUMBNAIL COM MOLDURA DOURADA */
 ion-thumbnail {
   width: 54px;
   height: 78px;
@@ -76,7 +74,7 @@ ion-thumbnail {
   }
 }
 
-/* TEXTO */
+
 ion-label {
   margin-left: 10px;
 
@@ -93,12 +91,11 @@ ion-label {
   }
 }
 
-/* CLICÁVEL */
+
 .clickable {
   cursor: pointer;
 }
 
-/* BOTÃO REMOVER */
 ion-button[color="danger"] {
   --color: #b33a3a;
   opacity: 0.75;
@@ -108,7 +105,6 @@ ion-button[color="danger"] {
   }
 }
 
-/* ESTADO VAZIO */
 .empty {
   margin-top: 80px;
   text-align: center;
